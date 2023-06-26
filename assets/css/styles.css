@@ -1,6 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Metal+Mania&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: Metal Mania, Lato;
+}
+
 #question-container {
     text-align: center;
     font-size: 2rem;
+    font-family: Lato, sans-serif;
     color: #444444;
     padding: 1rem;
   }
