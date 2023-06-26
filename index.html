@@ -13,11 +13,16 @@
   <h1>Heavy Metal Quiz</h1>
   
 <section id="section-container">
-    <div id="quiz-container">
+
+  <div id="start-container">
+    <p>Welcome to the Heavy Metal Quiz, where your banger knowledge will be tested! To play just press Start and select the correct answer to the question! Let's start!</p>
+    <button onclick="startQuiz();">Start</button>
+  </div>
+  <div id="quiz-container">
       <div id="question-container"></div>
       <div id="option-container"></div>
     <!-- <button id="submit-btn">Submit</button> -->
-    </div>
+  </div>
   <div id="result-container"></div>
   <div id="again">
     <button class="again" onclick="location.reload();">Try again?</button>
@@ -25,6 +30,7 @@
   <div>
     <p>Score: <span id="score-counter">0</span></p>
   </div>
+
 </section>
 
 </body>

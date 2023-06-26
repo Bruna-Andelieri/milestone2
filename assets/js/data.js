@@ -25,7 +25,7 @@ const quizData = [
       answer: 1,
     },
     {
-      question: "Which American heavy metal band is known for songs like “Nightmare”, “Dear God”, “Hail to the King”, or “Buried Alive”?",
+      question: "Which American heavy metal band is known for songs like “Nightmare”, “Hail to the King”, or “Buried Alive”?",
       options: ["My Chemical Romance", "Metallica", "Iron Maiden", "Avenged Sevenfold"],
       answer: 3,
     },
@@ -35,7 +35,7 @@ const quizData = [
       answer: 0,
     },
     {
-      question: "Symphony of Destruction” is a song by which heavy metal band?",
+      question: "'Symphony of Destruction' is a song by which heavy metal band?",
       options: ["Metallica", "Slipknot", "Megadeath", "Black Sabbath"],
       answer: 2,
     },

@@ -5,6 +5,23 @@ h1 {
     text-align: center;
     font-family: Metal Mania, Lato;
 }
+#section-container {
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px 100px blue;
+    background-color: white;
+    width: 70%;
+    height: auto;
+    max-width: 800px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+   
+}
+.hidden {
+  display: none;
+}
 
 #question-container {
     text-align: center;

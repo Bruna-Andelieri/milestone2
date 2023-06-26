@@ -7,9 +7,24 @@
   const resultContainer = document.getElementById("result-container");
   const restart = document.getElementById("again");
   const scoreCounter = document.getElementById("score-counter");
+  const startContainer = document.getElementById("start-container")
+  const maxQuestions = 6;
+
   let currentQuestion = 0;
   let score = 0;
   restart.style.visibility = "hidden";
+  startContainer.style.visibility = "visible";
+  quizContainer.style.visibility = "hidden";
+  quizContainer.style.display = 'none';
+
+
+function startQuiz() {
+  startContainer.style.visibility = "hidden";
+  quizContainer.style.visibility = "visible";
+  quizContainer.style.display = 'block';
+
+}
+
   function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
     questionContainer.innerText = currentQuizData.question;
@@ -48,7 +63,7 @@
   });
   function showNextQuestion() {
     currentQuestion ++;
-    if (currentQuestion < quizData.length) {
+    if (currentQuestion < maxQuestions) {
       loadQuestion();
     } else {
       showResult();
@@ -56,7 +71,7 @@
   }
   function showResult() {
     quizContainer.style.display = "none";
-    resultContainer.innerText = `You scored ${score} out of ${quizData.length}`;
+    resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
     resultContainer.style.display = 'block';
     restart.style.visibility = 'visible';
   }
