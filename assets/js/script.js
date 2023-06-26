@@ -25,6 +25,17 @@ function startQuiz() {
 
 }
 
+function showMessageScore(score) {
+  if(score >= 5){
+    alert("YOU ROCK!");
+  } else if (score >= 3) {
+    alert("NOT TO BAD!")
+  } else {
+    alert("YOU SOULD LISTEN MORE HEAVY METAL!")
+  }
+
+}
+
   function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
     questionContainer.innerText = currentQuizData.question;
@@ -70,6 +81,7 @@ function startQuiz() {
     }
   }
   function showResult() {
+    showMessageScore(score);
     quizContainer.style.display = "none";
     resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
     resultContainer.style.display = 'block';
