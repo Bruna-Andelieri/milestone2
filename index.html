@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta description -->
-    <meta name="description" content="Website game about musical trivia">
-    <meta name="keywords" content="game, trivia, musical, music, music trivia">
-    <title>Music Master</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/script.js"></script>
+  <title>demo quiz</title>
 </head>
+<body>
+  <h1>Quiz Demo</h1>
+  <div id="quiz-container">
+    <div id="question-container"></div>
+    <div id="option-container"></div>
+    <!-- <button id="submit-btn">Submit</button> -->
+  </div>
+  <div id="result-container"></div>
+  <div id="again">
+    <button class="again" onclick="location.reload();">Try again?</button>
+  </div>
+  <div>
+    <p>Score: <span id="score-counter">0</span></p>
+  </div>
+</body>
+</html>
