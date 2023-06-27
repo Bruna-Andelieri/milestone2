@@ -36,6 +36,7 @@ h1 {
     width: 70%;
     height: auto;
     max-width: 800px;
+    min-height: 500px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -65,18 +66,20 @@ h1 {
     padding: 5px; 
   }
   .option {
-    background-color: aliceblue;
     font-size: bold, 1.5rem;
     text-align: center;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 10px;
+    color: white;
+    background-color: rgba(136, 238, 153, 0.4);
+    font-family: Metal Mania, Lato;
   }
 
   .option:hover {
   
-      color: #fff;
-      background-color: black;
+    box-shadow: 0px 0px 50px rgba(1, 92, 1);
+    transition: all 0.5s ease;
  }
 button {
   color: white;
