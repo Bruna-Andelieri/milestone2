@@ -36,7 +36,7 @@ h1 {
     width: 70%;
     height: auto;
     max-width: 800px;
-    max-height: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -56,11 +56,13 @@ h1 {
   
   }
   #option-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
     color: #383A35;
-    border-radius: 10px ;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px; 
   }
   .option {
     background-color: aliceblue;
