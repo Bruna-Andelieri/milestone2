@@ -13,6 +13,7 @@
   let currentQuestion = 0;
   let score = 0;
   restart.style.visibility = "hidden";
+  restart.style.display = "none";
   startContainer.style.visibility = "visible";
   quizContainer.style.visibility = "hidden";
   quizContainer.style.display = 'none';
@@ -32,7 +33,7 @@ function showMessageScore(score) {
   } else if (score >= 3) {
     alert("NOT TO BAD!")
   } else {
-    alert("YOU SOULD LISTEN MORE HEAVY METAL!")
+    alert("YOU SHOULD LISTEN MORE HEAVY METAL!")
   }
 
 }
@@ -87,6 +88,7 @@ function showMessageScore(score) {
     resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
     resultContainer.style.display = 'block';
     restart.style.visibility = 'visible';
+    restart.style.display = 'block';
   }
   function shuffleQuizData() {
     for (let i = quizData.length - 1; i > 0; i--) {
