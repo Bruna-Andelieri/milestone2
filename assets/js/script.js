@@ -20,6 +20,7 @@
 
 function startQuiz() {
   startContainer.style.visibility = "hidden";
+  startContainer.style.display = "none";
   quizContainer.style.visibility = "visible";
   quizContainer.style.display = 'block';
 

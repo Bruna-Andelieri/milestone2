@@ -10,7 +10,9 @@ html {
   background: url(../images/heavyMetalBackground.jpg) no-repeat center center fixed;
   background-size: cover;
   background-color: #070B06;
- 
+  font-family: Lato, sans-serif;
+  color: whitesmoke;
+  
 }
 
 h1 {
@@ -20,6 +22,13 @@ h1 {
     color: black;
     text-shadow: 0px 0px 20px #383;
 }
+
+#start-container p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 15px 35px;
+}
+
 #section-container {
     text-align: center;
     box-shadow: 0px 0px 100px #070B;
@@ -32,7 +41,6 @@ h1 {
     margin-right: auto;
     padding: 10px;
     border-radius: 10px ;
-    color: white;
     background-color: #383;
     opacity: 0.8;
    
@@ -44,8 +52,6 @@ h1 {
 #question-container {
     text-align: center;
     font-size: 2rem;
-    font-family: Lato, sans-serif;
-    color: #444444;
     padding: 1rem;
   
   }
@@ -53,7 +59,6 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     font-size: 2rem;
-    font-family: Lato, sans-serif;
     color: #444444;
   }
   .option {
