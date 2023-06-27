@@ -1,6 +1,16 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lato&family=Metal+Mania&display=swap');
 
+  /*html {
+    background: linear-gradient(to right, #F72585, #B5179E, #7209B7);
+  }*/
+
+
+html {
+  background: url(../images/heavyMetalBackground.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 h1 {
     text-align: center;
     font-family: Metal Mania, Lato;
@@ -34,6 +44,9 @@ h1 {
   #option-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    color: #444444;
   }
   .option {
     background-color: aliceblue;
