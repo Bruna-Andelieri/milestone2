@@ -41,7 +41,7 @@ h1 {
     margin-right: auto;
     padding: 10px;
     border-radius: 10px ;
-    background-color: #383;
+    background-color: rgb(51, 136, 51, 0.9);
     opacity: 0.8;
    
 }
@@ -59,14 +59,16 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     font-size: 2rem;
-    color: #444444;
+    color: #383A35;
+    border-radius: 10px ;
   }
   .option {
     background-color: aliceblue;
-    font-size: 1.5rem;
+    font-size: bold, 1.5rem;
     text-align: center;
     margin: 1rem auto;
     padding: 1rem;
+    border-radius: 10px;
   }
   @media(max-width: 500px) {
     #option-container {
