@@ -1,100 +1,177 @@
 
-  // getters
-  const quizContainer = document.getElementById("quiz-container");
-  const questionContainer = document.getElementById("question-container");
-  const optionContainer = document.getElementById("option-container");
-  const submitButton = document.getElementById("submit-btn");
-  const resultContainer = document.getElementById("result-container");
-  const restart = document.getElementById("again");
-  const scoreCounter = document.getElementById("score-counter");
-  const startContainer = document.getElementById("start-container")
-  const maxQuestions = 6;
+// get elements
+const startContainer = document.getElementById("start-container")
+const quizContainer = document.getElementById("quiz-container");
+const questionContainer = document.getElementById("question-container");
+const optionContainer = document.getElementById("option-container");
+const resultContainer = document.getElementById("result-container");
+const restartContainer = document.getElementById("restart-container");
 
-  let currentQuestion = 0;
-  let score = 0;
-  restart.style.visibility = "hidden";
-  restart.style.display = "none";
-  startContainer.style.visibility = "visible";
-  quizContainer.style.visibility = "hidden";
-  quizContainer.style.display = 'none';
+const submitButton = document.getElementById("submit-btn");
+const scoreCounter = document.getElementById("score-counter");
+
+const maxQuestions = 6;
+
+// declare aux variables
+let currentQuestion = 0;
+let score = 0;
 
 
-function startQuiz() {
-  startContainer.style.visibility = "hidden";
-  startContainer.style.display = "none";
-  quizContainer.style.visibility = "visible";
-  quizContainer.style.display = 'block';
+/**
+* Change the state of an element. This is used to show or hide a container when interacting with the game buttons
+*/
+function changeState(elem, show) {
+  // show is true if show is true
+  if (show === true) {
+    elem.style.visibility = "visible";
+    elem.style.display = "block";
+  } else {
+    elem.style.visibility = "hidden";
+    elem.style.display = "none";
+  }
+}
+
+/**
+* Shows or hides the start container. 
+*/
+function showStartContainer(show = true) {
+  changeState(startContainer, show);
+}
+
+
+/**
+* Shows or hides the quiz container. 
+*/
+function showQuizContainer(show = true) {
+  changeState(quizContainer, show);
+}
+
+
+/**
+* Shows or hides the result container. 
+*/
+function showResultContainer(show = true) {
+  resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
+  changeState(resultContainer, show);
 
 }
 
+/**
+* Shows or hides the restart container.
+*/
+function showRestartContainer(show = true) {
+  changeState(restartContainer, show);
+}
+
+/**
+* Starts the game by showing the Quiz page. This is called at the bottom of this file
+*/
+function startGame() {
+  showStartContainer(true)
+  showQuizContainer(false)
+  showRestartContainer(false)
+}
+
+/**
+* Shuffles the quiz data loads the question and starts the quiz container.
+*/
+function startQuiz() {
+  shuffleQuizData();
+  loadQuestion();
+
+  showQuizContainer(true);
+  showRestartContainer(false);
+  showStartContainer(false);
+}
+
+/**
+* Prints the result to the user and restarts the game if the player wants. 
+*/
+function showResult() {
+  showMessageScore(score);
+
+  showRestartContainer(true);
+  showResultContainer(true);
+  showQuizContainer(false);
+}
+
+
+/**
+* Shows the message that corresponds to the score.
+*/
 function showMessageScore(score) {
-  if(score >= 5){
+  if (score >= 5) {
     alert("YOU ROCK!");
   } else if (score >= 3) {
     alert("NOT TO BAD!")
   } else {
     alert("YOU SHOULD LISTEN MORE HEAVY METAL!")
   }
-
 }
 
-  function loadQuestion() {
-    const currentQuizData = quizData[currentQuestion];
-    questionContainer.innerText = currentQuizData.question;
-    optionContainer.innerHTML = "";
-    currentQuizData.options.forEach((option, index) => {
-      const optionElement = document.createElement("div");
-      optionElement.classList.add("option");
-      optionElement.innerText = option;
-      optionElement.addEventListener("click", () => selectOption(index));
-      optionContainer.appendChild(optionElement);
-    });
-  }
-  /**
-   * his function is called when the user selects an answer
-   * @param {*} optionIndex the button index that was pressed 
-   */
-  function selectOption(optionIndex) {
-    const currentQuizData = quizData[currentQuestion];
-    // check if the option selected is the answer held in quizData
-    if (optionIndex === currentQuizData.answer) {
-      score ++;
-      scoreCounter.innerText = score.toString();
-      console.log('hey that right!');
-      console.log('score: ', score);
-    } else {
-      console.log('got got that wrong!');
-    }
-    showNextQuestion();
-  }
-  // disable options after selection
-  const options = optionContainer.getElementsByClassName("option");
-  // loop through the options array and disable the click event
-  Array.from(options).forEach(option => {
-    option.removeEventListener("click", selectOption);
-    option.classList.add("disabled");
+/**
+* Loads the data for the current question into the quiz. This is called every time the user clicks on a question option
+*/
+function loadQuestion() {
+  const currentQuizData = quizData[currentQuestion];
+  questionContainer.innerText = currentQuizData.question;
+  optionContainer.innerHTML = "";
+  currentQuizData.options.forEach((option, index) => {
+    const optionElement = document.createElement("div");
+    optionElement.classList.add("option");
+    optionElement.innerText = option;
+    optionElement.addEventListener("click", () => selectOption(index));
+    optionContainer.appendChild(optionElement);
   });
-  function showNextQuestion() {
-    currentQuestion ++;
-    if (currentQuestion < maxQuestions) {
-      loadQuestion();
-    } else {
-      showResult();
-    }
+}
+
+/**
+* Selects an option and increases score by 1 if the option selected is the right answer
+*/
+function selectOption(optionIndex) {
+  const currentQuizData = quizData[currentQuestion];
+  // This function is called when the answer is selected.
+  if (optionIndex === currentQuizData.answer) {
+    score++;
+    scoreCounter.innerText = score.toString();
+    console.log('hey that right!');
+    console.log('score: ', score);
+  } else {
+    console.log('got got that wrong!');
   }
-  function showResult() {
-    showMessageScore(score);
-    quizContainer.style.display = "none";
-    resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
-    resultContainer.style.display = 'block';
-    restart.style.visibility = 'visible';
-    restart.style.display = 'block';
+  showNextQuestion();
+}
+// disable options after selection
+const options = optionContainer.getElementsByClassName("option");
+// loop through the options array and disable the click event
+Array.from(options).forEach(option => {
+  option.removeEventListener("click", selectOption);
+  option.classList.add("disabled");
+});
+
+/**
+* Show the next question in the question list or load the result if there are no more questions to show
+*/
+function showNextQuestion() {
+  currentQuestion++;
+  // Load the question if the current question is less than maxQuestions.
+  if (currentQuestion < maxQuestions) {
+    loadQuestion();
+  } else {
+    showResult();
   }
-  function shuffleQuizData() {
-    for (let i = quizData.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
-    }
+}
+
+
+/**
+* Shuffle QuizData to make it easier to play with it.
+*/
+function shuffleQuizData() {
+  // Creates a random quiz data array.
+  for (let i = quizData.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
   }
-  shuffleQuizData();
-  loadQuestion();
+}
+
+startGame();

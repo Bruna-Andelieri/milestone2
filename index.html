@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +10,32 @@
   <script defer src="assets/js/script.js"></script>
   <title> Heavy Metal Quiz</title>
 </head>
+
 <body>
-<div id="background">
-  <h1>Heavy Metal Quiz</h1>
-  
-<section id="section-container">
+  <div id="background">
+    <h1>Heavy Metal Quiz</h1>
 
-  <div id="start-container">
-    <p>Welcome to the Heavy Metal Quiz, where your banger knowledge will be tested! To play just press Start and select the correct answer to the question! Let's start!</p>
-    <button onclick="startQuiz();">START</button>
-  </div>
-  <div id="quiz-container">
-      <div id="question-container"></div>
-      <div id="option-container"></div>
-    <!-- <button id="submit-btn">Submit</button> -->
-  </div>
-  <div id="result-container"></div>
-  <div id="again">
-    <button class="again" onclick="location.reload();">TRY AGAIN?</button>
-  </div>
-  <div>
-    <p>Score: <span id="score-counter">0</span></p>
-  </div>
+    <section id="section-container">
 
-</section>
+      <div id="start-container">
+        <p>Welcome to the Heavy Metal Quiz, where your banger knowledge will be tested! To play just press Start and
+          select the correct answer to the question! Let's start!</p>
+        <button onclick="startQuiz();">START</button>
+      </div>
+      <div id="quiz-container">
+        <div id="question-container"></div>
+        <div id="option-container"></div>
+        <!-- <button id="submit-btn">Submit</button> -->
+      </div>
+      <div id="result-container"></div>
+      <div id="restart-container">
+        <button onclick="location.reload();">TRY AGAIN?</button>
+      </div>
+      <div>
+        <p>Score: <span id="score-counter">0</span></p>
+      </div>
+
+    </section>
 
 </body>
 </div>
