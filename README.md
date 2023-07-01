@@ -6,10 +6,11 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 ## Features
 
-- ### __Logo__
-    - Featured at the top of the page the navigation shows the logo that links to the home page.
+- ### __Instructions__
+    In the middle of the page, there's a main screen that users see first. There is a section that explains how to play the game. It has a START button that invites them to begin their metal journey. But once the game starts, this section disappears, and exciting questions take its place.
 
-![Logo](/assets/images/media/logo.jpg)
+
+![start](/assets/images/media/start.jpg)
 
 - ### __Navigation Bar__
   - Feature at the top the links are to the right corner: Home, Service and Contact Us.
