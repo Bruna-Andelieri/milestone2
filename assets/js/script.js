@@ -1,13 +1,12 @@
 
+/*jshint esversion: 6 */
 // get elements
-const startContainer = document.getElementById("start-container")
+const startContainer = document.getElementById("start-container");
 const quizContainer = document.getElementById("quiz-container");
 const questionContainer = document.getElementById("question-container");
 const optionContainer = document.getElementById("option-container");
 const resultContainer = document.getElementById("result-container");
 const restartContainer = document.getElementById("restart-container");
-
-const submitButton = document.getElementById("submit-btn");
 const scoreCounter = document.getElementById("score-counter");
 
 const maxQuestions = 6;
@@ -67,9 +66,9 @@ function showRestartContainer(show = true) {
 * Starts the game by showing the Quiz page. This is called at the bottom of this file
 */
 function startGame() {
-  showStartContainer(true)
-  showQuizContainer(false)
-  showRestartContainer(false)
+  showStartContainer(true);
+  showQuizContainer(false);
+  showRestartContainer(false);
 }
 
 /**
@@ -103,9 +102,9 @@ function showMessageScore(score) {
   if (score >= 5) {
     alert("YOU ROCK!");
   } else if (score >= 3) {
-    alert("NOT TO BAD!")
+    alert("NOT TO BAD!");
   } else {
-    alert("YOU SHOULD LISTEN MORE HEAVY METAL!")
+    alert("YOU SHOULD LISTEN MORE HEAVY METAL!");
   }
 }
 
