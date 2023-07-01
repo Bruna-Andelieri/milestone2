@@ -49,5 +49,20 @@ const quizData = [
       options: ["Slipknot", "Sepultura", "Korn", "Lamb of God"],
       answer: 1,
     },
+    {
+      question: "Which Norwegian black metal band achieved notoriety for church burnings and their album 'De Mysteriis Dom Sathanas'?",
+      options: ["Burzum", "Mayhem", "Dimmu Borgir ", "Immortal"],
+      answer: 1,
+    },
+    {
+      question: "Which band is famous for blending elements of heavy metal and symphonic music, led by frontwoman Sharon den Adel?",
+      options: ["Nightwish", "Arch Enemy", "Within Temptation", "Lacuna Coil"],
+      answer: 2,
+    },
+    {
+      question: "Which band's album 'Kings of Metal' is known for its anthemic title track and powerful metal hymns?",
+      options: ["Sepultura", "Iron Maiden", "Pantera", "Manowar"],
+      answer: 3,
+    },
     
   ];
