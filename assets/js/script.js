@@ -50,7 +50,8 @@ function showQuizContainer(show = true) {
 * Shows or hides the result container. 
 */
 function showResultContainer(show = true) {
-  resultContainer.innerText = `You scored ${score} out of ${maxQuestions}`;
+  let message = showMessageScore(score);
+  resultContainer.innerText = `${message}\n\n You scored ${score} out of ${maxQuestions}`;
   changeState(resultContainer, show);
 
 }
@@ -87,8 +88,6 @@ function startQuiz() {
 * Prints the result to the user and restarts the game if the player wants. 
 */
 function showResult() {
-  showMessageScore(score);
-
   showRestartContainer(true);
   showResultContainer(true);
   showQuizContainer(false);
@@ -99,13 +98,16 @@ function showResult() {
 * Shows the message that corresponds to the score.
 */
 function showMessageScore(score) {
+  let message = "";
   if (score >= 5) {
-    alert("YOU ROCK!");
+    message = "YOU ROCK!";
   } else if (score >= 3) {
-    alert("NOT TO BAD!");
+    message = "NOT TO BAD!";
   } else {
-    alert("YOU SHOULD LISTEN MORE HEAVY METAL!");
+    message = "YOU SHOULD LISTEN MORE HEAVY METAL!";
   }
+
+  return message;
 }
 
 /**
