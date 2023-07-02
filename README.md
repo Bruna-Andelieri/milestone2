@@ -64,19 +64,21 @@ Git serves as a powerful tool for tracking changes in source code. It enables de
 
 ## __Deployment__
 
-  - The website was developed on Codeanywhere.
+  - The website was developed on VsCode.
 
-  - The site has been deployed in GitHub Pages, for getting there the steps taken were:
-    - On the Git Hub repository's main page, click on the "Settings" button;
-    - From the left-hand side menu, in the "Code and automation" section, click on "Pages".
-    - Within the build and deployment area, select
-    Source --> "Deploy from a branch; 
-    Branch --> "main" "/(root)"
-    Click on the "Save" button.
-     - It takes a few minutes to display the site.
+ - On the GitHub repository's main page, the "Settings" button was clicked.
+ - From the left-hand side menu, under the "Code and automation" section, the "Pages" option was selected.
+ - In the build and deployment section, the following settings were chosen:
+    - Source: "Deploy from a branch"
+    - Branch: "main" "/(root)"
+
+
+- Finally, the changes were saved by clicking on the "Save" button.
+
+After the deployment process, it may take a few minutes for the site to become visible and accessible.
 
      The live link can be found here:
-     https://bruna-andelieri.github.io/furb/
+     https://bruna-andelieri.github.io/milestone2/
 
 ## Credits
 
