@@ -84,9 +84,17 @@ After the deployment process, it may take a few minutes for the site to become v
 
   ### Content
 
-  - The code to make the header, footer, and social media was taken from the CI Love Running Project.
+  - The game utilizes fonts sourced from Google Fonts, ensuring a visually appealing and consistent typography throughout.
 
   ### Media
 
-  - All the images were from [Unplash](https://unsplash.com/)
+  - The background image were from [Cute Wallpaper](https://cutewallpaper.org)
   - The color pallet was extracted from [Coolors](https://coolors.co/)
+  - The icon image were from [Freepik](https://www.freepik.com/)
+
+  ### Acknowledgements
+  In summary, I would like to express my heartfelt appreciation to the following individuals and communities:
+
+- My Code Institute mentor, [Spencer Barriball](https://github.com/5pence), for their unwavering support and guidance throughout the project's development.
+- My partner, Ivan, whose  help me with some coding, belief in me and support have allowed me to transition into the field of software development, for which I am truly grateful.
+Their contributions have played a significant role in the success and completion of this project.
