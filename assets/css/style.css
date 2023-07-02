@@ -66,14 +66,14 @@ button:hover {
 
 /*Quiz container */
 
-#start-container p {
+#start-screen p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   padding: 15px 35px;
 }
 
 
-#section-container {
+#wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -93,18 +93,18 @@ button:hover {
 
 }
 
-#section-container>* {
+#wrapper>* {
   padding: 15px;
 }
 
-#question-container {
+#questions {
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
 
 }
 
-#option-container {
+#options {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5rem;
@@ -115,7 +115,7 @@ button:hover {
 }
 
 
-#result-container {
+#summary {
   font-family: 'Metal Mania', Lato;
   font-size: 2rem;
 
@@ -124,13 +124,13 @@ button:hover {
 /*Media queries */
 
 @media(max-width: 500px) {
-  #option-container {
+  #options {
     grid-template-columns: auto auto;
   }
 }
 
 @media(max-width: 380px) {
-  #option-container {
+  #options {
     grid-template-columns: auto;
   }
 }

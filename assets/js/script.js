@@ -1,12 +1,12 @@
 
 /*jshint esversion: 6 */
 // get elements
-const startContainer = document.getElementById("start-container");
-const quizContainer = document.getElementById("quiz-container");
-const questionContainer = document.getElementById("question-container");
-const optionContainer = document.getElementById("option-container");
-const resultContainer = document.getElementById("result-container");
-const restartContainer = document.getElementById("restart-container");
+const startScreen = document.getElementById("start-screen");
+const quizScreen = document.getElementById("quiz-screen");
+const questionsElement = document.getElementById("questions");
+const optionsElement = document.getElementById("options");
+const resultElement = document.getElementById("summary");
+const restartElement = document.getElementById("restart-game");
 const scoreCounter = document.getElementById("score-counter");
 
 const maxQuestions = 6;
@@ -34,7 +34,7 @@ function changeState(elem, show) {
 * Shows or hides the start container. 
 */
 function showStartContainer(show = true) {
-  changeState(startContainer, show);
+  changeState(startScreen, show);
 }
 
 
@@ -42,7 +42,7 @@ function showStartContainer(show = true) {
 * Shows or hides the quiz container. 
 */
 function showQuizContainer(show = true) {
-  changeState(quizContainer, show);
+  changeState(quizScreen, show);
 }
 
 
@@ -51,8 +51,8 @@ function showQuizContainer(show = true) {
 */
 function showResultContainer(show = true) {
   let message = showMessageScore(score);
-  resultContainer.innerText = `${message}\n\n You scored ${score} out of ${maxQuestions}`;
-  changeState(resultContainer, show);
+  resultElement.innerText = `${message}\n\n You scored ${score} out of ${maxQuestions}`;
+  changeState(resultElement, show);
 
 }
 
@@ -60,7 +60,7 @@ function showResultContainer(show = true) {
 * Shows or hides the restart container.
 */
 function showRestartContainer(show = true) {
-  changeState(restartContainer, show);
+  changeState(restartElement, show);
 }
 
 /**
@@ -114,15 +114,15 @@ function showMessageScore(score) {
 * Loads the data for the current question into the quiz. This is called every time the user clicks on a question option
 */
 function loadQuestion() {
-  const currentQuizData = quizData[currentQuestion];
-  questionContainer.innerText = currentQuizData.question;
-  optionContainer.innerHTML = "";
+  const currentQuizData = data[currentQuestion];
+  questionsElement.innerText = currentQuizData.question;
+  optionsElement.innerHTML = "";
   currentQuizData.options.forEach((option, index) => {
     const optionElement = document.createElement("div");
     optionElement.classList.add("option");
     optionElement.innerText = option;
     optionElement.addEventListener("click", () => selectOption(index));
-    optionContainer.appendChild(optionElement);
+    optionsElement.appendChild(optionElement);
   });
 }
 
@@ -130,7 +130,7 @@ function loadQuestion() {
 * Selects an option and increases score by 1 if the option selected is the right answer
 */
 function selectOption(optionIndex) {
-  const currentQuizData = quizData[currentQuestion];
+  const currentQuizData = data[currentQuestion];
   // This function is called when the answer is selected.
   if (optionIndex === currentQuizData.answer) {
     score++;
@@ -143,7 +143,7 @@ function selectOption(optionIndex) {
   showNextQuestion();
 }
 // disable options after selection
-const options = optionContainer.getElementsByClassName("option");
+const options = optionsElement.getElementsByClassName("option");
 // loop through the options array and disable the click event
 Array.from(options).forEach(option => {
   option.removeEventListener("click", selectOption);
@@ -169,9 +169,9 @@ function showNextQuestion() {
 */
 function shuffleQuizData() {
   // Creates a random quiz data array.
-  for (let i = quizData.length - 1; i > 0; i--) {
+  for (let i = data.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
+    [data[i], data[j]] = [data[j], data[i]];
   }
 }
 

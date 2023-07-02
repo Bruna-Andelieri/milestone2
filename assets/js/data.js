@@ -1,4 +1,4 @@
-const quizData = [
+const data = [
     {
       question: "When was heavy metal music first developed?",
       options: ["early 60s", "early 70s", "early 80s", "early 90s"],
