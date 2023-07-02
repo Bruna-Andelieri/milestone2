@@ -12,14 +12,15 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 ![start](/assets/images/media/start.jpg)
 
-- ### __Navigation Bar__
-  - Feature at the top the links are to the right corner: Home, Service and Contact Us.
+- ### __Questions__
+   Once you hit the START button, you'll be able to answer the questions by selecting the correct answer. After each question, the next one will appear along with your current score at the end of the screen.
 
-![Navigation Bar](/assets/images/media/navigation_bar.jpg)
+![Question](/assets/images/media/question-answer.jpg)
 
-- ### __Header__
-  - The header holds the Hero image, choose a beautiful image that can capture the happiness of the dog.
-![Hero Image](/assets/images/media/hero_image.jpg)
+- ### __Score__
+ After answering these six questions, your score will be displayed on the screen. Additionally, a message tailored to your score will appear, providing feedback on your performance. If you're up for another round, you'll find the TRY AGAIN button conveniently located on the same screen. Feel free to give it another shot and test your metal knowledge once more!
+
+![Score](/assets/images/media/score.jpg)
 
 - ### __Section__
   - In this section, we can find more about us and some client reviews.
