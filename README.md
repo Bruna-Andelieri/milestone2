@@ -45,23 +45,23 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 - ### HTML validation
 
-![HTML_Validator](/assets/images/media/html_validator.jpg)
+![HTML_Validator](/assets/images/media/html-validator.jpg)
 
 - ### CSS validation
 
-![CSS_Validator](/assets/images/media/css_validator.jpg)
+![CSS_Validator](/assets/images/media/css-validator.jpg)
 
 - ### Accessibility
 
-![Accessibility](/assets/images/media/accessibility.jpg)
+![Accessibility](/assets/images/media/lighthouse-validator.jpg)
 
 ## __Git__
-Git is used to tracking changes in the source code. The main commands used to utilised to capture and store changes:
+Git serves as a powerful tool for tracking changes in source code. It enables developers to effectively capture and store modifications using a set of primary commands. These commands are instrumental in managing version control, allowing users to track progress, collaborate, and maintain a reliable history of changes.
 
 - git add .
 - git bcommit -m "Message in quotation marks."
 - git push
-- 
+
 ## __Deployment__
 
   - The website was developed on Codeanywhere.
