@@ -22,51 +22,16 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 ![Score](/assets/images/media/score.jpg)
 
-- ### __Section__
-  - In this section, we can find more about us and some client reviews.
   
-  ![Section](/assets/images/media/section.jpg) 
-  
-
-  
-
-- ### __The Footer__
-  - The footer includes links to the relevant social media sites for Furb. The links will open to a new tab to allow easy navigation for the user.
-  
-![Footer](/assets/images/media/footer.jpg)
-
-- ### __Service__
-  - The second page includes Furb's services.
-  - Keeps the same identity from the Home page.
-
-![Service](/assets/images/media/service.jpg)
-
-- ### __Contact Us Page__
-  - This page contains a form, that allows the user to send a message to Furb.
-  - On the right side the user can see the maps displayed following the address. 
-
-![Contact](/assets/images/media/contact.jpg)
 
   ## Design
   
-  - The design is simple but intuitive, it is easy to find the necessary information.
-  
-## Website Structure
-  
-  - ### Home Page
-  
-  ![Home_Page](/assets/images/media/home_page.jpg)
-  
- - ### Service Page
- 
- ![Service_Page](/assets/images/media/service_page.jpg)
- 
--  ### Contact Page
- ![Contact_Page](/assets/images/media/contact_page.jpg)
- 
+  - The design of the interface is both simple and intuitive, ensuring that essential information is easily accessible. No need to worry about getting lost in complex menus or hidden features. Everything you need is right at your fingertips, making your Heavy Metal Quiz experience straightforward and enjoyable.
+   
 - ## Colour Palette
-  
-  ![Colour_Palette](/assets/images/media/color_palette.jpg)
+  - The quiz's color scheme is inspired by the background image, resulting in a visually harmonious experience. The chosen colors enhance the overall aesthetics, immersing players deeper into the Metal world, with vibrant accents and subtle hues.
+
+  ![Colour_Palette](/assets/images/media/colour-palette.jpg)
 
 
 ## Testing
