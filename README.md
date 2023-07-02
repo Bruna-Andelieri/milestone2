@@ -77,8 +77,7 @@ Git serves as a powerful tool for tracking changes in source code. It enables de
 
 After the deployment process, it may take a few minutes for the site to become visible and accessible.
 
-     The live link can be found here:
-     https://bruna-andelieri.github.io/milestone2/
+The live link can be found here [Heavy Metal Quiz](https://bruna-andelieri.github.io/milestone2/)
 
 ## Credits
 
