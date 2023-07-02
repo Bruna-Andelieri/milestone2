@@ -51,6 +51,10 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 ![CSS_Validator](/assets/images/media/css-validator.jpg)
 
+- ### Javascript validation
+
+![JS_Validator](/assets/images/media/js-validator.jpg)
+
 - ### Accessibility
 
 ![Accessibility](/assets/images/media/lighthouse-validator.jpg)
