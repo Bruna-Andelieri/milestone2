@@ -36,8 +36,9 @@ Heavy Metal Quiz is the ultimate online quiz game for die-hard heavy metal enthu
 
 ## Testing
 
-  - The website works in different browsers: Chrome, Firefox, Safari, and Edge.
-  - The website is fully responsive.
+  - The game has undergone extensive testing on various desktop and mobile browsers, including Chrome, Firefox and Safari. Results have consistently met expectations, ensuring accurate outcomes for players.
+  - The website boasts complete responsiveness, whether you are accessing it from a desktop computer, a tablet, or a smartphone, adjusting its layout and content.
+  - Chosen colors and fonts have been carefully evaluated for readability and accessibility, passing Lighthouse tests with flying colors. This guarantees that the game can be enjoyed by all users, regardless of their visual preferences or accessibility requirements.
   
 
 ## __Coding Validation__
