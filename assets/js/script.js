@@ -135,13 +135,10 @@ function selectOption(optionIndex) {
   if (optionIndex === currentQuizData.answer) {
     score++;
     scoreCounter.innerText = score.toString();
-    console.log('hey that right!');
-    console.log('score: ', score);
-  } else {
-    console.log('got got that wrong!');
-  }
+  } 
   showNextQuestion();
 }
+
 // disable options after selection
 const options = optionsElement.getElementsByClassName("option");
 // loop through the options array and disable the click event
