@@ -121,6 +121,14 @@ button:hover {
 
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+   
+}
+
 /*Media queries */
 
 @media(max-width: 500px) {
